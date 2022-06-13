@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.body{
+    background-color: rgba(58, 58, 56, 0.402);
+    text-align: center;
+}
+.id{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+h3{
+    color: rgb(255, 255, 255);
+}
+footer{
+    margin-top: 20px;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(54, 67, 67, 0.516);
+}
+.cartelera, .estrenos{
+    width: 100%;
+    margin-top: 20px;
+    background-color:rgba(207, 215, 218, 0.785);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card{
+    width: 255px;
+}
+.card:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    height: 330px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.peliculasLista{
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.car{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+@media screen and (max-width: 990px){
+    .cartelera,.estrenos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .peliculasLista{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
