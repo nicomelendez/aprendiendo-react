@@ -4,7 +4,7 @@ export default function CrearActores(){
     return(
     <>
         <h3>Crear Actores</h3>
-        <FormularioActores modelo={{nombre:'', fechaNacimiento:undefined}} onSubmit={valores=>console.log(valores)}/>
+        <FormularioActores modelo={{id:0 ,nombre:'', fechaNacimiento:undefined}} onSubmit={valores=>console.log(valores)}/>
     </>
     )
 }

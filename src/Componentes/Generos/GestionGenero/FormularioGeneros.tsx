@@ -17,7 +17,7 @@ export default function FormularioGeneros(props:formularioGenerosProps){
             {(formikProps)=>{
                 return (
                     <Form className="formulario">
-                        <FormGroupText campo="nombre" lable="Nombre" />
+                        <FormGroupText className="algo" campo="nombre" lable="Nombre" />
                         <div className="botones">
                             <Button disabled={formikProps.isSubmitting} type="submit">Guardar</Button>
                             <Link className="btn btn-danger" to="/generos">Cancelar</Link>

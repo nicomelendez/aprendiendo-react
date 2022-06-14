@@ -1,6 +1,8 @@
 import { Field, Form, Formik } from "formik";
 import { generoDTO } from "../../Interfaces/generos.model";
 import Button from "../../Utils/Button";
+import FormularioActores from "../Actores/GestionActores/FormularioActores";
+import css from './PeliculaIndividual.module.css';
 
 export default function FiltroPeliculas(){
 
