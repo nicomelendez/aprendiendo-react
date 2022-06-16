@@ -51,8 +51,8 @@ export default function FormGroupImagen(props:formGroupFechaProps){
 interface formGroupFechaProps{
     campo:string;
     label:string;
-    imagenURL?:string;
+    imagenURL:string;
 }
 FormGroupImagen.defaultProps ={
-    imagenUrl:' '
+    imagenUrl:''
 }

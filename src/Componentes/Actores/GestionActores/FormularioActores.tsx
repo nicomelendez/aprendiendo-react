@@ -7,6 +7,8 @@ import * as Yup from 'yup';
 import FormGroupFecha from "../../../Utils/FromGroupFecha";
 import FormGroupImagen from "../../../Utils/FormGroupImagen";
 import './FormularioAcotresEstilos.module.d.css';
+import FormGroupMarkDown from "../../../Utils/FormGroupMarkdown";
+
 
 export default function FormularioActores(props:formularioActoresProps){
     return(
@@ -21,6 +23,7 @@ export default function FormularioActores(props:formularioActoresProps){
                 <FromGroupText className="ALGO" campo="nombre" lable="Nombre" />
                 <FormGroupFecha label="Fecha Nacimiento" campo="fechaNacimiento"/>
                 <FormGroupImagen campo="foto" label="Foto" imagenURL={props.modelo.fotoURL}/>
+                <FormGroupMarkDown campo="Biografia" label="Biografia" />
                 </div>
                 <div className="boton">
                 <Button disabled={formikProps.isSubmitting} type="submit">Guardar</Button>
