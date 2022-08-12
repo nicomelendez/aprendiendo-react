@@ -1,0 +1,17 @@
+@use './variables';
+
+$color-principal:rgb(182, 180, 180);
+$color-letra:rgba(30, 240, 72, 0.8);
+
+body{
+    background:$color-principal;
+}
+
+@mixin caja_personalizada($fondo:white, $color:$color-letra){
+    background-color: $fondo;
+    border:4px solid black;
+    color: $color;
+}
+.c4{
+    @include caja_personalizada($fondo:gray, $color:red);
+}

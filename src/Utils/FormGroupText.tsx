@@ -11,7 +11,7 @@ export default function FromGroupText(props: formGroupTextProps){
            </div>
             <ErrorMessage name={props.campo}>
                 {
-                    mensaje=> <MostrarErrorForm mensaje={mensaje} />
+                    mensaje => <MostrarErrorForm mensaje={mensaje} />
                 }
             </ErrorMessage>
         </div>

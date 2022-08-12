@@ -1,0 +1,19 @@
+.caja h1 {
+  color: aqua;
+}
+
+p {
+  color: rgb(225, 112, 78);
+}
+
+body {
+  background: rgb(182, 180, 180);
+}
+
+.c4 {
+  background-color: gray;
+  border: 4px solid black;
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

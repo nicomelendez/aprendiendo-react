@@ -1,0 +1,42 @@
+.body{
+
+}
+
+.grid-layout{
+    height: 650px;
+    display: grid;
+    grid-template-areas: 'cabecera cabecera'
+                         'menu menu'
+                         'contenido lateral'
+                         'footer footer'
+    ;
+    grid-template-rows: 20% 10% auto 10%;
+    background-color: bisque;
+    border:1px solid black;
+}
+.caja{
+    border:4px solid black;
+    text-align: center;
+    padding: 20px;
+}
+.c1{
+    grid-area: cabecera;
+    background: blue;
+}
+.c2{
+    grid-area: menu;
+    background-color: brown;
+}
+.c3{
+    grid-area: contenido;
+    background-color: blueviolet;
+}
+
+.c4{
+    grid-area:lateral;
+    background-color: darkcyan;
+}
+.c5{
+    grid-area: footer;
+    background-color: yellow;
+}

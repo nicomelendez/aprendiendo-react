@@ -4,8 +4,6 @@ import './Css/FormEstilos.module.d.css';
 
 export default function FormGroupImagen(props:formGroupFechaProps){
 
-    const divStyle = {marginTop:'10px'}
-    const imgStyle = {width:'450px'}
     const [imagenBase64, setImagenBase64] = useState('');
     const [imagenURL, setImagenURL] = useState(props.imagenURL);
     const {values} = useFormikContext<any>();

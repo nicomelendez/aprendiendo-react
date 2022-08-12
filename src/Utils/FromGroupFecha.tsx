@@ -7,7 +7,7 @@ export default function FormGroupFecha(props:formGroupFechaProps){
         <div className="form-group">
             <label htmlFor={props.campo}>{props.label}</label>
 
-            <input type="date" className="form-control" id={props.campo} name={props.campo} defaultValue={values[props.campo]?.toLocalDateString('es-UY')}
+            <input type="date" className="form-control" id={props.campo} name={props.campo} defaultValue={values[props.campo]?. toLocaleDateString('es-UY')}
             onChange={e=>{
                 const fecha = new Date(e.currentTarget.value + 'T00:00:00');
                 values[props.campo] = fecha;
